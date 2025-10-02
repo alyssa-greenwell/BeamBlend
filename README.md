@@ -12,7 +12,7 @@ This project is currently a work in progress and is not available to install.
 This project requires [Blender](https://www.blender.org/download/) to be installed.
 
 ## Contributing
-add here
+To submit a bug report or enhancement suggestion, or to contribute to this project, please read the [Contributing](CONTRIBUTING.md) file.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
