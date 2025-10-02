@@ -20,7 +20,7 @@ To report a bug, please open a new [GitHub issue](https://docs.github.com/en/iss
 - Describe what steps were taken to encounter the bug. Be specific! Try to describe exactly what you were doing and how you got there.
 - Wherever you can, include relevant screenshots or GIFs.
 
-### Enhancement Suggestion
+### Enhancement Suggestions
 
 To suggest an enhancement or a new feature, please open a new [GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues). The following are guidelines for creating a good suggestion:
 
