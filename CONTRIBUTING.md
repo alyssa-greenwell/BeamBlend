@@ -31,3 +31,7 @@ To suggest an enhancement or a new feature, please open a new [GitHub issue](htt
 
 ### Contributing
 
+To begin contributing to this project, look at the [beginner-friendly issues](https://github.com/alyssa-greenwell/BeamBlend/issues?q=state%3Aopen%20label%3A%22good%20first%20issue%22).
+
+## Questions
+Have any questions? Contact the maintainer at [alyssag2@hawaii.edu](mailto:alyssag2@hawaii.edu).
