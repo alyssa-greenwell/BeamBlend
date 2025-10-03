@@ -1,6 +1,6 @@
 # BeamBlend
 
-![](assets/Header_Image)
+<img src="assets/Header_Image" height="300">
 
 BeamBlend is a lighting previsualization Blender add-on for live theater, focusing on ease of use and accessibility for nonprofit, community, and educational organizations. Features of BeamBlend include the following:
 
