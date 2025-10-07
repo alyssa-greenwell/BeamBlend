@@ -1,0 +1,3 @@
+# Justification for Using the MIT License
+
+I chose the MIT License because it is simple and permissive. I do not mind people making closed source versions of the project, and I want it to be as easy to use and modify as possible. This project is less about creating software that competes with the existing standards, and more about experimenting with features that may be useful. If some parts of this software can make the existing standards better, I would want it to be implemented even if that software is closed source. The MIT License is compatible, encourages contributions, and allows users to use the code freely with little restrictions. For these reasons, I feel it is appropriate for my project.
