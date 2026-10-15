@@ -30,12 +30,25 @@ def update_focus(self, context):
     spot = get_part("SPOT", obj)
     if spot != None:
         spot.data.spot_blend = 0.15 + (self.focus / 100.0) * (1.0 - 0.15)
- 
+
 def update_gel(self, context):
-    obj = context.object
+    gelColors = {
+        'OPEN_WHITE': (1.0, 1.0, 1.0),
+        'R33': (1.0, 0.35, 0.45), # No Color Pink
+        'R32': (1.0, 0.255, 0.235), # Medium Salmon Pink
+        'R23': (1.0, 0.4, 0.25), # Orange
+        'R02': (1.0, 0.55, 0.2), # Bastard Amber
+        'R08': (1.0, 0.875, 0.75), # Pale Gold
+        'R60': (0.8, 0.85, 1.0), # No Color Blue
+        'R70': (0.425, 0.9, 1.0), # Nile Blue
+        'R80': (0.05, 0.1, 1.0), # Primary Blue
+        'R54': (0.45, 0.25, 1.0), # Lavender
+        'R48': (0.7, 0.01, 0.7), # Rose Purple
+    }
+    obj = self.id_data
     spot = get_part("SPOT", obj)
-    if spot != None:
-        spot.data.color = self.gel       
+    if spot is not None:
+        spot.data.color = gelColors.get(self.gel, (1.0, 1.0, 1.0))   
 
 # PROGRAMMABLE PROPERTIES
 

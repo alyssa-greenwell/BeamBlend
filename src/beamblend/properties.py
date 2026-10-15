@@ -7,7 +7,7 @@ Detailed Description:
 Property groups for Beamblend that function as custom data types.
 """
 import bpy
-from bpy.props import FloatProperty, FloatVectorProperty, StringProperty, CollectionProperty, IntProperty
+from bpy.props import FloatProperty, FloatVectorProperty, StringProperty, CollectionProperty, IntProperty, EnumProperty
 from .fixture import update_pan, update_tilt, update_focus, update_gel, update_color, update_intensity, update_zoom
 from .cuelist import update_cue_index, update_current_cue
 
@@ -48,13 +48,23 @@ class FixtureProperties(bpy.types.PropertyGroup):
         update=update_focus
     )
     
-    gel: FloatVectorProperty(
+    gel: EnumProperty(
         name="Gel",
-        subtype='COLOR',
-        size=3,
-        min=0.0, 
-        max=1.0,
-        default=(1.0, 1.0, 1.0),
+        items=[
+            ('OPEN_WHITE', "Open White", "No colored gel"),
+            ('R33', "No Color Pink", "Rosco #33 No Color Pink"),
+            ('R32', "Medium Salmon Pink", "Rosco #32 Medium Salmon Pink"),
+            ('R23', "Orange", "Rosco #23 Orange"),
+            ('R02', "Bastard Amber", "Rosco #02 Bastard Amber"),
+            ('R08', "Pale Gold", "Rosco #08 Pale Gold"),
+            ('R60', "No Color Blue", "Rosco #60 No Color Blue"),
+            ('R70', "Nile Blue", "Rosco #70 Nile Blue"),
+            ('R80', "Primary Blue", "Rosco #80 Primary Blue"),
+            ('R54', "Lavender", "Rosco #54 Lavender"),
+            ('R48', "Rose Purple", "Rosco #48 Rose Purple"),
+
+        ],
+        default='OPEN_WHITE',
         update=update_gel
     )
     
