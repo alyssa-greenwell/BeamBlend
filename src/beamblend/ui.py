@@ -7,7 +7,7 @@ Detailed Description:
 Contains all the panels displayed for the Beamblend add-on.
 '''
 import bpy
-from .helpers import get_object_root
+from .helpers import get_object_root, get_part
 
 class LibraryPanel(bpy.types.Panel):
     '''
@@ -82,19 +82,19 @@ class FixtureProperties(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         obj = get_object_root(context.active_object)
-        fixture_type = obj.get("fix_type")
+        spot = get_part("SPOT", obj)
         
         self.layout.label(text="Fixture Position (degrees)")
         layout.prop(obj.beamblend, "pan", slider=True)
         layout.prop(obj.beamblend, "tilt", slider=True)
         
-        if fixture_type == "SOURCE4" or fixture_type == "PAR64":
+        if spot.get("phys_focus", False) or spot.get("phys_gel", False):
             self.layout.label(text="Light Properties")
         
-        if fixture_type == "SOURCE4":
+        if spot.get("phys_focus", False):
             layout.prop(obj.beamblend, "focus", slider=True)
             
-        if fixture_type == "SOURCE4" or fixture_type == "PAR64":
+        if spot.get("phys_gel", False):
             layout.prop(obj.beamblend, "gel")
         
 class FixtureProgrammables(bpy.types.Panel):
@@ -122,7 +122,7 @@ class FixtureProgrammables(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         obj = get_object_root(context.active_object)
-        fixture_type = obj.get("fix_type")
+        spot = get_part("SPOT", obj)
         
         # Intensity
         layout.prop(obj.beamblend, "intensity", slider=True)
@@ -135,8 +135,10 @@ class FixtureProgrammables(bpy.types.Panel):
         op.intensity = 100.0
         
         # DMX Properties
-        if fixture_type == "COLORSOURCE":
+        if spot.get("dmx_zoom", False):
             layout.prop(obj.beamblend, "zoom", slider=True)
+            
+        if spot.get("dmx_color", False):
             layout.prop(obj.beamblend, "color")
 
 
