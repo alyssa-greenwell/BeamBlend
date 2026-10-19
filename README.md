@@ -9,10 +9,10 @@ BeamBlend is a lighting previsualization Blender add-on for live theater, focusi
 - Cue List Creator
 
 ## Project Status
-This project is currently a work in progress and is not available to install.
+The initial release is out now! Download it [here](https://github.com/alyssa-greenwell/BeamBlend/releases/tag/v1.0.0).
 
 ## Prerequisites
-This project requires [Blender](https://www.blender.org/download/) to be installed.
+This project requires [Blender](https://www.blender.org/download/) version 4.3.2 or higher to be installed.
 
 ## Contributing
 To submit a bug report or enhancement suggestion, or to contribute to this project, please read the [Contributing](CONTRIBUTING.md) file.
