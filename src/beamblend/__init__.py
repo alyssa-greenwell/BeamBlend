@@ -1,13 +1,6 @@
 import bpy
 import importlib
 
-# Add-on Metadata    
-bl_info = {
-    "name": "BeamBlend",
-    "blender": (2, 80, 0),
-    "category": "Object",
-}
-
 # Load / Relaod Submodules
 if "operators" in locals():
     importlib.reload(properties)

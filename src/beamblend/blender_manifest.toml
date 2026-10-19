@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "beamblend"
+version = "1.0.0"
+name = "Beamblend"
+tagline = "Adds lighting previsualization systems, including model presets such as a proscenium stage and three types of lights with custom properties."
+maintainer = "Alyssa Greenwell <808alyssag@gmail.com>"
+type = "add-on"
+
+blender_version_min = "4.3.2"
+
+license = [
+  "GPL-2.0-or-later",
+]
+
+[permissions]
+files = "Required to read internal template .blend files bundled with the extension."
