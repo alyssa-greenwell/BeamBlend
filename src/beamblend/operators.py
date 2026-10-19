@@ -12,6 +12,7 @@ import os
 from bpy.props import StringProperty, FloatProperty
 from math import floor
 from .helpers import delete_object_recursive, find_fixture_by_id, get_pipe_endpoints, get_object_root, get_part, initialize_fixture
+from bpy.app.handlers import persistent
 
 class DeleteObject(bpy.types.Operator):
     '''
@@ -304,6 +305,7 @@ class Go(bpy.types.Operator):
         
         return {'FINISHED'}
 
+@persistent
 def beamblend_stop_at_end(scene):
     '''
     Helper function to Go: Stops animation at correct keyframe and cleans up
