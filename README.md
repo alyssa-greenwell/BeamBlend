@@ -45,13 +45,13 @@ The following is some of the basics to getting started using BeamBlend. I will b
 
 ### Getting Started
 
-The first thing you will want to do if you haven't already is open the 3D Viewport on the right side of the screen and open the BeamBlend tab. (See steps 7 and 8 of Installation above for instructions on how to do that). I also recommend deleting any objects that are in the scene by default. You should see a screen that looks something like the following:
+The first thing you will want to do if you haven't already is open the 3D Viewport on the right side of the screen and open the "BeamBlend" tab. (See steps 7 and 8 of Installation above for instructions on how to do that). I also recommend deleting any objects that are in the scene by default. You should see a screen that looks something like the following:
 
 <img src="assets/blank-scene.png" height="300">
 
 The first thing we will want is a stage. Select a stage from the Lighting Library tab to spawn one in. You should see a stage appear on the screen.
 
-Optional but recommended step: Go to Viewport Overlays and uncheck Relationship Lines. This will make your stage look a lot cleaner.
+Optional but recommended step: Go to Viewport Overlays and uncheck "Relationship Lines". This will make your stage look a lot cleaner.
 
 <img src="assets/uncheck-relationship-lines.png" height="300">
 
@@ -61,7 +61,7 @@ Now we want to spawn in a light. Select a light from the lighting library to spa
 
 If you want to adjust the position of the fixture, select the **yoke** of the fixture.
 
-Blender tip: You can click the Move icon on the left side of the screen to bring up arrows that will move the fixture. You can also press 'G' to move an object freely, or press 'GX', 'GY', or 'GZ' to move an object about an axis. I recommend using 'GX' to move a fixture along a pipe, as most pipes spawned in with stages are set along the X axis.
+Blender tip: You can click the "Move" icon on the left side of the screen to bring up arrows that will move the fixture. You can also press 'G' to move an object freely, or press 'GX', 'GY', or 'GZ' to move an object about an axis. I recommend using 'GX' to move a fixture along a pipe, as most pipes spawned in with stages are set along the X axis.
 
 <img src="assets/select-move.png" height="300">
 
@@ -79,11 +79,11 @@ At this stage, you might notice that we cannot actually see the light! Blender d
 
 In the bottom right corner of the scene, just to the left of the properties window, you will find your Cue List. The following are some basic operations of the Cue List.
 
-The first thing you want to do is make a cue. Create a look with your lights on the stage, then hit Record Cue to create a new cue with that look.
+The first thing you want to do is make a cue. Create a look with your lights on the stage, then hit "Record Cue" to create a new cue with that look.
 
 <img src="assets/record-cue.png" height="300">
 
-Now, if you make any changes to the look on the scene, you can save them by either hitting Update Cue to change the look of the current selected cue to the new look, or you can hit Record Cue again to create a new cue with this new look.
+Now, if you make any changes to the look on the scene, you can save them by either hitting "Update Cue" to change the look of the current selected cue to the new look, or you can hit "Record Cue" again to create a new cue with this new look.
 
 <img src="assets/second-cue.png" height="300">
 
