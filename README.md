@@ -44,7 +44,7 @@ To install the add-on to Blender, follow these steps:
 
 ## Using BeamBlend
 
-The following is some of the basics to getting started using BeamBlend. I will be covering some of the features of this add-on, but I will NOT be providing a comprehensive intro to Blender. I will only cover a Blender function if it is directly relevant to BeamBlend. There are several resources online that can help you with Blender basics if you are new to the program. If you've never used Blender before, I suggest watching this [Intro to 3D Navigation in Blender](https://www.youtube.com/watch?v=i8wO5PEDO1c) by CG Cookie on YouTube before jumping into BeamBlend.
+The following is some of the basics to getting started using BeamBlend. I will be covering some of the features of this add-on, but I will NOT be providing a comprehensive intro to Blender. I will only cover a Blender function if it is directly relevant to BeamBlend. There are several resources online that can help you with Blender basics if you are new to the program. If you've never used Blender before, I suggest watching this [Intro to 3D Navigation in Blender](https://www.youtube.com/watch?v=i8wO5PEDO1c) by CG Cookie on YouTube before jumping into BeamBlend. This should be enough to get started, but if you're interested in more in-depth vidoes on how to use Blender, you can view CG Cookie's full [Blender Beginner Course](https://www.youtube.com/watch?v=iYKrLnOwPBM&list=PL3GeP3YLZn5gZhJhyIQPKoz9Yrs9oKU9R).
 
 ### Getting Started
 
